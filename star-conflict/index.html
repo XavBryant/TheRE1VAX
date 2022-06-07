@@ -1,0 +1,87 @@
+
+
+
+<style>
+
+html {
+
+}
+
+.playerGuidesContainer {
+background-color:purple;
+height:100%;
+width:50%;
+}
+
+.playerGuidesTitle {
+display: inline-block;
+position: relative;
+background-color:green;
+width:90%;
+height:90%;
+margin: 5%;
+z-index:+2;
+}
+
+.playerGuidesContent {
+display:none;
+}
+
+
+.shipBuildsTitle{
+display: inline-block;
+position: relative;
+background-color:green;
+width:90%;
+height:90%;
+margin: 5%;
+z-index:+2;
+}
+
+.shipBuildsContainer {
+width:50%;
+height:100%;
+background-color:blue;
+}
+
+.shipBuildsContent {
+display:none;
+}
+
+
+
+.shipBuildsTitle:checked ~.shipBuildsContainer{
+width:99%;
+height:99%;
+}
+
+
+</style>
+
+<html>
+<input type="checkbox" id="ShipBuildsToggle">
+<label class="ShipBuildsTitle" for="ShipBuildsToggle"></label>
+
+<input type="checkbox" id="PlayerGuidesToggle">
+<label class="PlayerGuidesTitle" for="PlayerGuidesToggle"></label>
+
+<div class="shipBuildsContainer">
+<div class="shipBuildsTitle"></div>
+</div>
+
+
+<div class="playerGuidesContainer">
+<div class="playerGuidesTitle"></div>
+</div>
+
+
+
+
+
+</html>
+
+
+
+
+
+
