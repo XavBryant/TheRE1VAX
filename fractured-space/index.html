@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<title>Fractured Space - Ships and Guides</title>
+<style>
+/* Montserrate Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+font-family: 'Montserrat', sans-serif;
+-ms-overflow-style: none;scrollbar-width: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+text-decoration: none;
+color:black;
+}
+
+.RendersWrapper {
+height:100%;
+}
+
+
+.GuideList {
+background-color: #00283c;
+flex:1;
+height: 100%;
+border-right: 2px solid grey;
+width: 100%;
+}
+
+.RenderGallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+height: 100%;
+}
+
+
+.ITM {
+height:20%;width:20%;
+color: #00283c;
+transition: .2s ease-in-out;
+margin: .5%;
+}
+.ITM:hover {height:22%;width:22%;}
+
+.ITMimg {
+position:relative;
+height: 100%;
+width: 100%;
+border-radius: .5rem .5rem 0% 0%;
+background-size: cover;
+opacity: 100%;
+}
+
+/* Images */
+.img1 {background-image: url("ships/Marten.png");}
+.img2 {background-image: url("ships/Spike.png");}
+.img3 {background-image: url("ships/Kirishima.png");}
+.img4 {background-image: url("ships/Protazan.png");}
+.img5 {background-image: url("ships/Relic.png");}
+.img6 {background-image: url("ships/Tyrant.png");}
+.img7 {background-image: url("ships/Singularity.png");}
+
+.caption {
+position:relative;
+background-color: #3A5361;
+border-radius: 0% 0% .5rem .5rem;
+color: #ecece8;
+text-align:center;
+font-size:120%;
+}
+
+.caption a {text-decoration: none;}
+
+
+.img {
+position: static;
+max-width: 100%;
+height:auto;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center center;
+background-color: clear;
+z-index:2;
+background-color:green;
+}
+
+.ITMContent {
+display: inline-block;
+font-size: 200%;
+color:white;
+background-color: rgba(0, 0, 0, 0.5);
+padding: 1%;
+border-radius:2%/5%;
+margin:1% 4% 3% 4%;
+white-space: pre-line;
+}
+
+.ITMImage {
+position:static;
+display:block;
+max-width: 100%;
+height:auto;
+background-size: contain;
+background-repeat: no-repeat;
+background-color: clear;
+z-index:2;
+}
+
+
+
+.EA {
+position:fixed;
+width:100%;
+height:100%;
+display:none;
+z-index: 20;
+background-color:clear;
+top:0;
+}
+
+.lightbox {
+display:block;
+position:absolute;
+top:0;
+z-index: -1;
+width: 100%;
+height: 100%;
+background-color:clear;
+}
+
+.wrapper {
+position: relative;
+background-color: rgba(0, 0, 0, 0.6);
+z-index: 9;
+width:60%;
+height:100%;
+overflow-y: scroll !important;
+scrollbar-width: none;
+top: 50%;  
+left: 50%; 
+transform: translate(-50%, -50%);
+padding:1%;
+margin-top:1%;
+margin-bottom:5%;
+border-radius:1%/2%;
+}
+
+
+.EA:target {
+display: flex;
+animation: FadeIn 1s forwards;
+}
+@keyframes FadeIn {0%{opacity: 0%; transform: translate(0px, +40px);}20% {opacity: 0%; transform: translate(0px, +12px);}100% {opacity: 100%; transform: translate(0px);} }
+
+
+</style>
+
+<div class="GuideList">
+<div id="RenderGallery" class="RenderGallery">
+
+<a href="#Endeavor" class="ITM"><div class="ITMimg img1" alt="Render 1"></div><div class="caption">Endeavor</div></a>
+<a href="#Watchman" class="ITM"><div class="ITMimg img2" alt="Render 1"></div><div class="caption">Watchman</div></a>
+<a href="#Kirishima" class="ITM"><div class="ITMimg img3" alt="Render 1"></div><div class="caption">Kirishima</div></a>
+<a href="#Protazan" class="ITM"><div class="ITMimg img4" alt="Render 1"></div><div class="caption">Protazan</div></a>
+<a href="#Relic" class="ITM"><div class="ITMimg img5" alt="Render 1"></div><div class="caption">Relic</div></a>
+<a href="#Tyrant" class="ITM"><div class="ITMimg img6" alt="Render 1"></div><div class="caption">Tyrant</div></a>
+<a href="#Singularity" class="ITM"><div class="ITMimg img6" alt="Render 1"></div><div class="caption">Singularity</div></a>
+</div>
+</div>
+
+<div id="Endeavor" class="EA"><a class="lightbox" href="#"></a><div class="wrapper">
+<img id="none" src="ships/Marten.png" alt="Marten Build" class="ITMImage" href=""></img>
+<div class="ITMContent">
+Endeavor
+
+--
+
+Currently my favorite ship.
+
+--
+
+The ship with my own biuld, enables my playstyle that seems to make it versatile.
+
+It is an interesting ship. It is versatile, when with crew it can be quite survivable, and turrets allow to to cover ground and soften targets allowing you to flank.
+
+It has good armor which allows it to take a decent beating.
+
+Main weapon is quite effective! I built for high rate of fire. With good damage, AOE, and good range its a fine weapon as you move around your turrets.
+
+Turrets also periodically release missiles. This missile barrage is quite useful on unarmored targets.
+
+Concussion mines deal a very good amount of damage, and can be used to attack ships at a distance, or used defensively if you get rushed.
+
+Gravity well is good for moving large ships out of cover, or even out of open space.
+</div></div></div>
+
+<div id="Watchman" class="EA"><a class="lightbox" href="#"></a><div class="wrapper">
+<img id="none" src="ships/WatchmanCrew.png" alt="Spike Build" class="ITMImage" href=""></img>
+<div class="ITMContent">
+Watchman -- USR [United Space Research]
+
+The sniper for USR, boasts very good damage for precise shots at extreme ranges.
+8000 base hull hp
+600 base speed
+
+
+======RE1VAX Synapse:
+--Extremely niche and high skill curve, but can be very effective at many ships
+--Effective solo
+--System denial
+
+Tactical Analysis:
+[Primary] Railgun: Very long range, decent projectile speed (still hard to hit at long ranges)
+Against Amored: Good damage, consistent.
+Against Unarmored: Very very good damage. Take out that Destroyer at 21km and not even blink... by yourself.
+
+[Secondary] Short-range void cannon:
+<8k range.
+Extremely useful. Good damage, useful against small mining ships.
+Can be used to augment Railgun at closer ranges for very high potential dps.
+360 range.
+
+[Dispersal Slow Shield] Reduces damage by 50% for 5s.  Afterwards, slows enemy ships nearby by 20% for 5s.
+--Useful to survive hard attacks or missile salvos. Medium reload (50s).
+--Slowing debuff never really proved useful, as turning around is never a good idea, and is hard to do.
+
+[Watchman Missiles] 18km range. Short reload (20s)
+--Extremely useful at softening up targets at long ranges. Good for finishing small ships at low health.
+
+[Corrode Drones] 36k range. 30s operation. Reload 20s, if squad dead 75s.
+--The extra trick up watchmans sleeve. Corrodes armor of an entire target.
+--Very useful for medium to large targets, as this allows primary to deal exceptional damage.
+--(Note: I found that the cooldown is quite short in practice)
+
+
+Other notes:
+Ship is good at strafing a target at long ranges. This can make it easier to land leading shots (my personal experience).
+In a team situation, this ship can be very good for defending a sector, and preparing for Gamma.
+1. Sit in a flanked position middle of the ally side of the sector, close to cover. Lay cover for allies and keep back adversaries.
+2. Arrive early in Gamma. Get a good position and strike early, preping them up for ally firepower.
+</div></div></div>
+
+<div id="Kirishima" class="EA"><a class="lightbox" href="#"></a><div class="wrapper">
+<img id="none" src="ships/Kirishima.png" alt="Kirishima Build" class="ITMImage" href=""></img>
+<div class="ITMContent">Hi, this is a block of text, this block of text is very important. Crazy how i have to write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+</div></div></div>
+
+<div id="Protazan" class="EA"><a class="lightbox" href="#"></a><div class="wrapper">
+<img id="none" src="ships/Protazan.png" alt="Protazan Build" class="ITMImage" href=""></img>
+<div class="ITMContent">Hi, this is a block of text, this block of text is very important. Crazy how i have to write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+</div></div></div>
+
+<div id="Relic" class="EA"><a class="lightbox" href="#"></a><div class="wrapper">
+<img id="none" src="ships/Relic.png" alt="Relic Build" class="ITMImage" href=""></img>
+<div class="ITMContent">Hi, this is a block of text, this block of text is very important. Crazy how i have to write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+</div></div></div>
+
+<div id="Tyrant" class="EA"><a class="lightbox" href="#"></a><div class="wrapper">
+<img id="none" src="ships/Tyrant.png" alt="Tyrant Build" class="ITMImage" href=""></img>
+<div class="ITMContent">Hi, this is a block of text, this block of text is very important. Crazy how i have to write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+</div></div></div>
+
+<div id="Protazan" class="EA"><a class="lightbox" href="#"></a><div class="wrapper">
+<img id="none" src="ships/Protazan.png" alt="Protazan Build" class="ITMImage" href=""></img>
+<div class="ITMContent">Hi, this is a block of text, this block of text is very important. Crazy how i have to write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+write about things off the cuff about each one of these ships, explaining why I bothered to make a build, explain the build, how to use the build, possible modifications, and a whole lot of other things no one cares about.
+</div></div></div>
+
+
+
+	</div>
+
