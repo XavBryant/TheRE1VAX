@@ -1,0 +1,30 @@
+div 1
+
+
+
+
+Each Item
+Is a small sort of button that has a thumbnail and title
+hovering over makes it grow
+clicking makes it into full page.
+clicking off reduces it.
+
+css block
+
+
+
+
+itemcontainer
+inside container is 3 things
+1. image
+2. caption
+3. invisible overlay that acts as a button
+
+
+on button press
+image. caption.
+
+
+ok
+ok
+, we can do this like my picture slides.
